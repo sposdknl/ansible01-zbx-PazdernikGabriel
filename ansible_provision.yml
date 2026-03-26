@@ -14,13 +14,11 @@
         - joe
         - mc
       state: present
-
   - name: Install Ansible collections
     ansible.builtin.command:
       cmd: ansible-galaxy collection install community.zabbix --force
-
   - name: Cloning Git repository
     ansible.builtin.git:
-      repo: 'https://github.com/sposdknl/zbx7-agent-ansible'
+      repo: 'https://github.com/sposdknl/ansible01-zbx-PazdernikGabriel.git'
       dest: /opt/repo
 ...
